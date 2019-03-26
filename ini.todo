@@ -1,5 +1,6 @@
-  ☐  oop dasar
-  ☐ class dan object
+  daftar bahan ajar yang akan ku pelajari :
+  ✔ oop dasar - pendahuluan @done (19-03-26 11:40)
+  ✔ class dan object @done (19-03-26 12:01)
   ☐ property dan method
   ☐ constructor
   ☐ object type
@@ -15,3 +16,25 @@
   ☐ interface
   ☐ autoloading
   ☐ namespace
+
+class = blueprint/template untuk membuat instance dari objek
+class mendefenisikan object
+menyimpan data dan perilaku yang disebut dengan property dan method
+
+object = instance yang didefenisikan oleh class
+banyak membuat object dengan satu class
+object dibuat dengan menggunakan keyword NEW
+
+property = sesuatu yang meerepresentasikan data/keadaan dari sebuah objek
+variabel yang ada di dalam objek(member variabel)
+sama seperti variable d dlm php ditambah dengan keyword 'visibility, Private, Public'
+
+method = merepresentasikan perilaku dari sebuah objek
+function yang ada di dalam objek
+sama seperti functon dalam php cuman di tambah keyword 'visibility, Private, Public'
+
+contoh ==
+
+mobil
+property ( nama, merk, warna, kecepatan max, jlh penumpang)
+method (tambah kecepatan, kurangi kecepatan, belok kiri, belok kanan, ganti transmisi)
