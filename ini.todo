@@ -1,21 +1,21 @@
   daftar bahan ajar yang akan ku pelajari :
   ✔ oop dasar - pendahuluan @done (19-03-26 11:40)
   ✔ class dan object @done (19-03-26 12:01)
-  ☐ property dan method
-  ☐ constructor
-  ☐ object type
-  ☐ inheritance 1
-  ☐ inheritance 2
-  ☐ overriding
-  ☐ visibility
-  ☐ setter dan getter
-  ☐ static keyword
-  ☐ constant
-  ☐ abstract class 1 
-  ☐ abstract class 2
-  ☐ interface
-  ☐ autoloading
-  ☐ namespace
+  ✔ property dan method @done (19-03-26 12:30)
+  ✔ constructor @done (19-03-27 09:40)
+  ✔ object type @done (19-03-27 09:52)
+  ✔ inheritance 1 @done (19-04-04 08:00)
+  ✔ inheritance 2 @done (19-04-04 08:00)
+  ✔ overriding @done (19-04-04 10:54)
+  ✔ visibility @done (19-04-04 12:12)
+  ✔ setter dan getter @done (19-04-06 15:59)
+  ✔ static keyword @done (19-04-10 15:06)
+  ✔ constant @done (19-04-11 08:59)
+  ✔ abstract class 1 @done (19-04-11 09:16)
+  ✔ abstract class 2 @done (19-04-11 09:45)
+  ✔ interface @done (19-04-12 08:56)
+  ✔ autoloading @done (19-04-12 09:13)
+  ✔ namespace @done (19-04-12 10:18)
 
 class = blueprint/template untuk membuat instance dari objek
 class mendefenisikan object
@@ -38,3 +38,82 @@ contoh ==
 mobil
 property ( nama, merk, warna, kecepatan max, jlh penumpang)
 method (tambah kecepatan, kurangi kecepatan, belok kiri, belok kanan, ganti transmisi)
+
+constructor = method spesial yang ada d dalam kelas
+
+inheritence
+menciptakan hirarki antar kelas (parent & child)
+child class mewarisi semua properti dan method dari parent nya yang visible
+child class di buat untuk memperluas fungsionalitas dari kelas parent nya
+
+overriding
+bisa membuat method di kelas child
+
+
+visibility / access modifier
+konsep yang digunakan untuk mengatur akses dari property dan method pada sebuah ibjek
+ada 3 keyword
+public dapat digunakan dimana saja bahkan di luar kelas sekaligus
+private  property dan methodnya hanya dapat digunakan didlam sebuah kelas tertentu saja
+protected hanya bisa digunakan di dalam sebuah kelas beserta turunannya
+
+setter dan getter (accessor method)
+terkait dengan visibility(public, Protected, Provate)
+untuk menhindari visibility ketika memnggunakan property public
+
+static keyword (static property staticmetthod)
+untuk apa static keyword. member yang terikat dengan class
+nilai static akan selalu tetap meskipun object di intansi berulang kali
+membuat kode menjadi seolah olah procedural
+biasanya digunakan untuk membuat fungsi bantuan/helper
+digunakan di class2 utility pada framework
+
+contant tempat menyimpan nilai yang nilainya tidak dapat berubah 
+dengan define() dan const
+menggunakan define tidak bisa di dlama class sehingga global
+sedangkan const bisa d gunakan dalam class
+magic constant
+__LINE__
+__FILE__
+__DIR__
+
+konsep abstract class itu susah
+adalah sebuah class yang tidak dapat dintansiasi
+kelas abstrak
+mendefenisikan interface untuk kelas lain yang menjadi turunannya
+berperan sebagai kerangka dasar untuk kelas turunannya
+memiliki minimal 1 method abstrak (dianggap sebagai interface atau method terhadap turunannya/inheritance)
+digunakan dalam pewarisan untuk memaksakan implemantasi method abstrak yang sama untuk semua kelas turunannya 
+semua kelas turunan harus mengimplementasikan method abstrak yang ada di kelas abstraknya
+kelas boleh memiliki property/method regular
+boleh memiliki property/static method
+
+knpa harus menggunakan kelas abstrak
+merepresaentasikan ide atau konsep dasar
+ke;putusan perancangan desain dari kelas
+composition over inheritance
+salah cara menerapkan polimorphism
+sentralisasi logic
+mempermudah pengerjaan tim
+
+
+interface merupakan kelas abstrak yang tidak memiliki implementasi
+murni merupakan template untuk kelas turunannya
+tidak boleh memiliki property, hanya deklarasi methodnya
+semua methodnya harus di deklarasikan dengan visibility public
+boleh mendeklarasikan __construct()
+satu kelas boleh mengimplmentasikan banyak interface
+dengan mengguakan type hintinhg dapat melakukan dependency injection
+pada akhirnya akan mencapai polymorphism
+
+autoloading : proses pemanggilan class(file) tanpa harus menggunakan require
+1 class ditulias dalam 1 file
+gak perlu repot repot menggunakan require untuk palikasi skala besar
+
+
+namespace
+sebuah cara untuk mengelompokkan program ke dalam sebuah package tersendiri
+juga disebut teknik enkapsulasi
+php tidak mengijinkan kita memiliki 2 class dengan nama yang sama
+biasa digunakan dalam satu tim
+bagaiaman jika ita menggunakan script/library dari pihak ke tiga
